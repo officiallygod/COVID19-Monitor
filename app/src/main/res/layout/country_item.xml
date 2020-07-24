@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        style="@style/CardView.Dark"
+        android:backgroundTint="#79000000"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_vector_test"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="18dp"
+            tools:text="Country Name" />
+
+        <TextView
+            android:id="@+id/total_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="14dp"
+            tools:text="No. of Cases" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Total: "
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/total_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="14dp"
+            tools:text="No. of Deaths" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Deaths: "
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
